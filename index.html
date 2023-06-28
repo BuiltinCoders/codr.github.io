@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="prism.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css"
+        integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Codr</title>
 </head>
+
 <body>
     <div class="container">
         <div class="webpage">
-
             <aside class="sidebar">
                 <div class="navigation-bar">
-                    <img src="logo.png" alt="logo" id="logo">
+                    <img src="logo.png" alt="logo" id="logo" />
                     <nav>
                         <ul class="navigation">
                             <li class="nav-item">
@@ -40,45 +47,48 @@
                 </div>
                 <div class="sm-ad">
                     <!-- ad comes here -->
-                    <img src="whatsapp-ad.png" alt="ad">
+                    <img src="whatsapp-ad.png" alt="ad" />
                 </div>
             </aside>
-
 
             <section class="content-area">
                 <header>
                     <div class="search-area">
-                        <input type="text" id="search-query" name="search" placeholder="Search your query">
+                        <input type="text" id="search-query" name="search" placeholder="Search your query" />
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-
-                    <!-- Not usable -->
-                    <!-- <div class="activity-area">
-                        message icon
-                        bell icon
-                        user icon
-                    </div> -->
                 </header>
 
                 <section class="lg-ad">
-                    <!-- <img src="instagram-ad.JPG" alt="ad"> -->
+                    <!-- instagram ad -->
                 </section>
 
                 <section class="source-code">
                     <div class="code-head">
                         <h1 class="primary-heading">Analog Clock</h1>
                         <div class="code-icons">
-                            <i class="fa-brands fa-html5 code-icon primary-heading" style="color: #e04300;"></i>
-                            <i class="fa-brands fa-css3-alt code-icon primary-heading" style="color: #00aaff;"></i>
-                            <i class="fa-brands fa-square-js code-icon primary-heading" style="color: #ffc800;"></i>
+                            <a href="#clock-html-code"><i class="fa-brands fa-html5 code-icon primary-heading fa-shake"
+                                    style="color: #e04300"></i>
+                            </a>
+                            <a href="#clock-css-code"><i class="fa-brands fa-css3-alt code-icon primary-heading fa-shake"
+                                    style="color: #00aaff"></i>
+                            </a>
+                            <a href="#clock-js-code"><i class="fa-brands fa-square-js code-icon primary-heading fa-shake"
+                                    style="color: #ffc800"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="code-area">
-                        <i class="fa-regular fa-clipboard copy-code" onclick="copyContent()"></i>
-                        
-                        <!-- Source Code comes here -->
-                        <pre>
-                        <code class="language-javascript" id="analog-clock-html">
+                        <div id="clock-html-code" class="code-container">
+                            <div class="text-indicators">
+                                <p id="clock-html-copied" class="text-copied">text copied</p>
+                                <i class="fa-regular fa-clipboard copy-code"
+                                    onclick="copyContent('analog-clock-html', 'clock-html-copied')"></i>
+                                <p class="language-tag html-color">HTML</p>
+                            </div>
+                            <!-- html code -->
+                            <pre>
+                        <code class="language-html" id="analog-clock-html">
 &lt!DOCTYPE html&gt
 &lthtml lang="en"&gt
 
@@ -161,6 +171,279 @@
 &lt/html&gt
                         </code>
                     </pre>
+                        </div>
+
+                        <!-- css code -->
+                        <div id="clock-css-code" class="code-container">
+                            <div class="text-indicators">
+                                <p id="clock-css-copied" class="text-copied">text copied</p>
+                                <i class="fa-regular fa-clipboard copy-code"
+                                    onclick="copyContent('analog-clock-css', 'clock-css-copied')"></i>
+                                <p class="language-tag css-color">CSS</p>
+                            </div>
+                            <pre>
+                                <code class="language-css" id="analog-clock-css">
+/* CSS RESET */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'inter';
+}
+
+.container{
+    background-color: #efe7f5;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outermost-clock-wrapper{
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 31px 2px #d5cedd;
+    padding: 13px;
+}
+
+.outer-clock{
+    padding: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+}
+
+/* CLOCK */
+
+.clock{
+    background-color: rgba(255, 255, 255, 0);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.hour{
+    position: absolute;
+    top: 0%;
+    height: 50%;
+    width: 5px; 
+    transform-origin: 50% 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 566;
+    
+}
+
+.center{
+    height: 15px;
+    width: 15px;
+    background-color: #9767cc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 35;
+    border-radius: 50%;
+}
+
+/* CLOCK HOUR HAND */
+
+#hour-1{
+    transform: rotate(30deg);
+}
+
+#hour-2{
+    transform: rotate(60deg);
+}
+#hour-3{
+    transform: rotate(90deg);
+}
+#hour-4{
+    transform: rotate(120deg);
+}
+#hour-5{
+    transform: rotate(150deg);
+}
+#hour-6{
+    transform: rotate(180deg);
+}
+#hour-7{
+    transform: rotate(210deg);
+}
+#hour-8{
+    transform: rotate(240deg);
+}
+#hour-9{
+    transform: rotate(270deg);
+}
+#hour-10{
+    transform: rotate(300deg);
+}
+
+#hour-11{
+    transform: rotate(330deg);
+}
+
+
+/* CLOCK HOUR DIGIT */
+.hour-digit{
+    text-align: center;
+    position: absolute;
+    font-size: 21px;
+    z-index: 566;
+    color: black;
+}
+
+#hour-digit-1{
+    transform: rotate(-30deg);
+}
+#hour-digit-2{
+    transform: rotate(-60deg)
+}
+#hour-digit-3{
+    transform: rotate(-90deg)
+}
+#hour-digit-4{
+    transform: rotate(-1200deg)
+}
+#hour-digit-5{
+    transform: rotate(-150deg)
+}
+#hour-digit-6{
+    transform: rotate(-180deg)
+}
+#hour-digit-7{
+    transform: rotate(-210deg)
+}
+#hour-digit-8{
+    transform: rotate(-240deg)
+}
+#hour-digit-9{
+    transform: rotate(-270deg)
+}
+#hour-digit-10{
+    transform: rotate(-300deg)
+}
+#hour-digit-11{
+    transform: rotate(-330deg)
+}
+
+/* TIME HAND */
+.timehand{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    height: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    transform-origin: 50% 100%;
+
+}
+
+/* SECOND HAND */
+#stick{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    height: 100%;
+    width: 5px;
+    background-color: #9767cc;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/* HOUR POINT */
+#point{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #ceabf6;
+    z-index: 1;
+}
+
+/* MINUTE HAND */
+#smallStick{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: #4e2c8e;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 1;
+    margin-top: 58px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+                        </code>
+                    </pre>
+                        </div>
+
+                        <!-- javascript code -->
+                        <div id="clock-js-code" class="code-container">
+                            <div class="text-indicators">
+                                <p id="clock-js-copied" class="text-copied">text copied</p>
+                                <i class="fa-regular fa-clipboard copy-code"
+                                    onclick="copyContent('analog-clock-js', 'clock-js-copied')"></i>
+                                <p class="language-tag js-color">JS</p>
+                            </div>
+                            <pre>
+                    <code class="language-javascript" id="analog-clock-js">
+let secondHand = document.getElementById('secondhand');
+let minuteHand = document.getElementById('minutehand');
+let hourHand = document.getElementById('hourhand');
+let minute = document.querySelector('#minuteValue');
+
+function updateClock(){
+    let currentTime = new Date();
+    let currentHour = currentTime.getHours();
+    let currentMinute = currentTime.getMinutes();
+    let currentSecond = currentTime.getSeconds();
+
+    let hrPosition = (currentHour*30)+(currentMinute*1/2)+(currentSecond*1/120);
+    let minPosition = (currentMinute*6)+ (currentSecond*1/10);
+    let secPosition = (currentSecond*6);
+
+    
+    // rotating hour, minute and second hand position
+    hourHand.style.transform = `rotate(${hrPosition}deg)`;
+    minuteHand.style.transform = `rotate(${minPosition}deg)`;
+    secondHand.style.transform = `rotate(${secPosition}deg)`;
+    
+    // Display Current Minute in Minute Hand
+    if(currentMinute &lt 10){
+        console.log(currentMinute)
+        minute.innerHTML = `0${currentMinute}`;
+    }
+    else{
+        minute.innerHTML = `${currentMinute}`;
+    }
+    minute.style.transform = `rotate(-${minPosition}deg)`;
+}
+
+setInterval(updateClock, 1000);
+
+
+                    </code>
+                </pre>
+                        </div>
                     </div>
                 </section>
             </section>
@@ -171,4 +454,5 @@
     <script src="script.js"></script>
     <script src="prism.js"></script>
 </body>
+
 </html>

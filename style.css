@@ -1,7 +1,7 @@
 /* --------------- CUSTOM SCROLLBAR ----------------- */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
-  height: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -9,74 +9,82 @@
     border-radius: 45px;
 }
 
-::-webkit-scrollbar-track{
-      background-color: #121418;
+::-webkit-scrollbar-track {
+    background-color: #121418;
 }
 
-.code-area::-webkit-scrollbar {
+.code-container::-webkit-scrollbar {
     display: none;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'inter';
-    /* font-size: 10px; */
 }
 
 /* --------------------- UTLITY CLASSES -------------------- */
-.primary-heading{
+.primary-heading {
     font-size: 30px;
 }
 
 
-.webpage{
+.webpage {
     display: flex;
 }
 
+.html-color{
+    background-color: #ff4c00;
+}
+
+.css-color{
+    background-color: #00aaff;
+}
+
+.js-color{
+    background-color: #ffc800;
+}
+
 /* ------------------------- SIDEBAR --------------------------------- */
-.sidebar{
+.sidebar {
     background-color: #121418;
     color: white;
     width: 20%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    /* height: 100vh; */
     padding: 0px 30px;
 }
 
 /* ------------------- LOGO AND NAVBAR ---------------------- */
-.navigation-bar{
+.navigation-bar {
     margin: 50px 0px;
-    /* border: 2px solid red; */
 }
 
-#logo{
+#logo {
     width: 93px;
 }
 
-.navigation{
+.navigation {
     list-style-type: none;
 }
 
-.nav-item{
+.nav-item {
     margin: 31px 0px;
 }
 
-.nav-item a{
+.nav-item a {
     text-decoration: none;
     color: white;
     font-size: 19px;
 }
 
-.nav-item i{
+.nav-item i {
     color: #00ffd0;
     font-size: 20px;
     margin-right: 6px;
@@ -84,22 +92,19 @@ html {
 }
 
 /* ----------------- AD SECTION ------------------------- */
-.sm-ad{
+.sm-ad {
     height: 150px;
-    /* border: 2px solid red; */
-    /* border-radius: 23px; */
 }
 
-.sm-ad img{
+.sm-ad img {
     height: 100%;
     border-radius: 23px;
     cursor: pointer;
     box-shadow: 2px 2px 35px 4px #49768b6e;
 }
 
-.lg-ad{
+.lg-ad {
     width: 100%;
-    /* border: 2px solid red; */
     height: 200px;
     background-image: url(instagram-ad.JPG);
     background-position: center;
@@ -113,20 +118,20 @@ html {
 
 
 /* ---------------------------- CONTENT AREA ---------------------------- */
-.content-area{
+.content-area {
     background-color: #1b1f24;
     width: 80%;
     color: white;
     padding: 5px 50px;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-#search-query{
+#search-query {
     background-color: #121418;
     border: none;
     padding: 13px 70px;
@@ -135,47 +140,87 @@ header{
     text-align: center;
 }
 
-#search-query[placeholder]{
+#search-query[placeholder] {
     color: white;
 }
 
-.search-area i{
+.search-area i {
     font-size: 20px;
     margin: 0px 0px;
     cursor: pointer;
 }
 
 /* ------------------------- SOURCE CODE AREA ----------------- */
-.source-code{
+.source-code {
     margin: 30px 0px;
 }
 
-.code-head{
+.code-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.code-icon{
+.code-icon {
     margin: 0px 5px;
+    cursor: pointer;
+    --fa-animation-delay: 1s;
+    --fa-animation-duration: 2s;
+    --fa-animation-iteration-count: 2;
+    --fa-animation-timing: ease-in-out;
 }
 
-.code-area{
+.code-area {
+    width: 100%;
+    margin: 30px 0px;
+    position: relative;
+}
+
+.code-container {
+    background-color: #121418;
+    border-radius: 27px;
+    margin-top: 10px;
     width: 100%;
     height: 400px;
-    background-color: #121418;
-    margin: 30px 0px;
-    border-radius: 27px;
-    padding: 30px 0px;
-    position: relative;
     overflow: scroll;
+    position: relative;
 }
 
-.copy-code{
+/* ------ copy text related properties ------ */
+.text-indicators {
+    position: sticky;
+    left: 100%;
+    top: 19px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 49px;
+}
+
+.copy-code {
     font-size: 1.7rem;
-    position: absolute;
-    top: 25px;
-    right: 33px;
     color: #00ffd0;
     cursor: pointer;
+    margin: 0px 12px;
+}
+
+.copy-code:hover {
+    color: #292e3d;
+}
+
+.text-copied {
+    color: #00ffd0;
+    background-color: #1c1f25;
+    padding: 10px 14px;
+    border-radius: 13px;
+    display: none;
+}
+
+/* language tags */
+.language-tag{
+    color: #1b1f24;
+    padding: 6px 15px;
+    border-radius: 6px;
+    margin-right: 21px;
+    font-weight: 800;
 }

@@ -1,9 +1,10 @@
-let text = document.getElementById('analog-clock-html').innerHTML;
-  const copyContent = async () => {
-    try {
-      await navigator.clipboard.writeText(text);
-      console.log('Content copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy: ', err);
-    }
-  }
+// code copy function
+const copyContent = (element_id, text_copied_id)=> {
+  console.log(element_id);
+  let text =  document.getElementById(element_id).innerText;
+  let textCopied =  document.getElementById(text_copied_id);
+  console.log(text_copied_id)
+  navigator.clipboard.writeText(text);
+  textCopied.style.display = 'block';
+  
+}
