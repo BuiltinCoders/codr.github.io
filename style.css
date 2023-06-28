@@ -161,6 +161,10 @@ header {
     align-items: center;
 }
 
+.code-icons a{
+    text-decoration: none;
+}
+
 .code-icon {
     margin: 0px 5px;
     cursor: pointer;
